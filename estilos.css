@@ -1,3 +1,107 @@
+/* Cliente */
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+
+    height: 60px;
+    width: 100%;    
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin: 0;
+}
+
+nav ul{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 10px;    
+}
+
+
+nav ul li {
+    padding: 10px;    
+}
+
+nav ul li:hover:not(:first-child){
+
+    background-color: #f2f2f2;
+    border-bottom:1px solid black;
+    padding: 10px;
+
+}
+
+a{
+    text-decoration: none;    
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper{    
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+#lista_productos{
+    width: 96vw;
+    height: 100%;
+    padding: 10px;
+    margin: 0;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;    
+}
+
+.producto{    
+    width: 20%;
+    height: 42%;
+    padding: 15px;
+    margin: 5px;
+    font-size: 13px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    outline: 1px solid #F0C047;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.producto:hover{
+    cursor: pointer;
+    border: 1px solid #F0C047;
+    outline: 2px solid #F0C047;
+    background: #d4a93c;
+}
+
+.producto img{
+    width: 104px;
+    height: 133px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid lightgray;
+}
+
+
+button{
+    background: #d4a93c;
+    border: 1px solid lightgray;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /* LOGIN */
 
 #wrapper-login{
@@ -7,7 +111,7 @@
     background-color: #fff;
     position: absolute;
     top: 0;
-    left: 0;    
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,8 +119,8 @@
 
 }
 
-form{    
-    border: 1px solid lightgray;    
+form{
+    border: 1px solid lightgray;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,14 +134,14 @@ form input{
     height: 40px;
     border: 1px solid lightgray;
     margin-bottom: 10px;
-    padding: 10px;    
+    padding: 10px;
 }
 
 #btn_login{
     background: #F0C047;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.5s ease all;; 
+    transition: 0.5s ease all;;
 }
 
 #btn_login:hover{
@@ -58,7 +162,52 @@ form input{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin-bottom: 6px;
-    font-weight: bold;    
+    font-weight: bold;
     text-align: left;
+}
 
+#error_msg{
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+}
+
+
+.item img{
+    width: 104px;
+    height: 133px;
+    padding-bottom: 5px;    
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+    margin: 4px;
+    width: 30%;
+}
+
+
+.total{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info{
+    
+    margin-left: 10px;
+}
+
+#carrito{    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

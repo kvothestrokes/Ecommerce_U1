@@ -31,17 +31,26 @@
         $_SESSION["usuario"] = $user;        
         $_SESSION["rol"] = $role;    
         $message = "Inicio de sesión correcto.";
+
+        if ($role == "admin") {
+            header("Location: home_admin.php");
+        } else if ($role == "client") {
+            header("Location: home_client.php");
+        }
+
     }else {
         $message = "Inicio de sesión incorrecto";
-    }
 
-    $response = [
-        "status" => $success,        
-        "user_rol" => $role,
-        "message" => $message,
-    ];
+        header("Location: index.php?error=$message");
+   }
 
-    echo json_encode($response);
+    // $response = [
+    //     "status" => $success,        
+    //     "user_rol" => $role,
+    //     "message" => $message,
+    // ];
+
+    // echo json_encode($response);
 
 ?>
 
