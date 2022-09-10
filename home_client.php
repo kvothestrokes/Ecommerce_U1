@@ -18,7 +18,7 @@
                     <li><a href="home_client.php">Productos</a></li>
                     <li><a href="carrito.php">Carrito</a></li>                    
                     <li style="font-size:20px;color:blue">Bienvenido, <?php echo $usuario ?></li>
-                    <li><a href="index.php">Cerrar Sesión</a></li>
+                    <li><a href="index.php">cerrar sesión</a></li>
                 </ul>
             </nav>
 
@@ -26,6 +26,7 @@
             <div id="lista_productos">
                 <div class="producto">
                     <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="producto1">
+                    <p>Stock:10</p>
                     <h3> Backpack, Fits 15 Laptops</h3>                                        
                     <p>$109.95</p>
                     <button onclick="addToCart('Backpack, Fits 15 Laptops',109.95, `https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg` )">Agregar al carrito</button>
@@ -33,6 +34,7 @@
 
                 <div class="producto">
                     <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" alt="producto1">
+                    <p>Stock:10</p>
                     <h3>Mens Casual Slim Fit T-Shirts</h3>
                     <p>$22.3</p>
                     <button onclick="addToCart('Mens Casual Slim Fit T-Shirts',22.3,`https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg`)">Agregar al carrito</button>
@@ -40,6 +42,7 @@
 
                 <div class="producto">
                     <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" alt="producto1">
+                    <p>Stock:10</p>
                     <h3>Mens Cotton Jacket</h3>                    
                     <p>$55.99</p>
                     <button onclick="addToCart('Mens Cotton Jacket',55.99, `https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg` )">Agregar al carrito</button>
@@ -47,6 +50,7 @@
 
                 <div class="producto">
                     <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" alt="producto1">
+                    <p>Stock:10</p>
                     <h3>Mens Casual Slim Fit</h3>                    
                     <p>$15.99</p>
                     <button onclick="addToCart('Mens Casual Slim Fit', 15.99, `https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg`)">Agregar al carrito</button>
@@ -54,6 +58,7 @@
 
                 <div class="producto">
                     <img src="https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg" alt="producto1">
+                    <p>Stock:10</p>
                     <h3>Womens T Shirt Casual </h3>                    
                     <p>$12.99</p>
                     <button onclick="addToCart('test','a')">Agregar al carrito</button>
@@ -61,6 +66,7 @@
 
                 <div class="producto">
                     <img src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg" alt="producto1">
+                    <p>Stock:10</p>
                     <h3>Dragon Station Chain Bracelet</h3>                    
                     <p>$695</p>
                     <button onclick="addToCart('test','a')">Agregar al carrito</button>
@@ -68,6 +74,7 @@
 
                 <div class="producto">
                     <img src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg" alt="producto1">
+                    <p>Stock:10</p>
                     <h3>Solid Gold Petite Micropave </h3>                    
                     <p>$168</p>
                     <button onclick="addToCart('test','a')">Agregar al carrito</button>
@@ -75,6 +82,7 @@
 
                 <div class="producto">
                     <img src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" alt="producto1">
+                    <p>Stock:10</p>
                     <h3>White Gold Plated Princess</h3>                    
                     <p>$9.99</p>
                     <button onclick="addToCart('test','a')">Agregar al carrito</button>
@@ -107,5 +115,6 @@
         }
     </script>
 </html>
+
 
 

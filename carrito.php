@@ -18,7 +18,7 @@
                     <li><a href="home_client.php">Productos</a></li>
                     <li><a href="carrito.php">Carrito</a></li>                    
                     <li style="font-size:20px;color:blue">Bienvenido, <?php echo $usuario ?></li>
-                    <li><a href="index.php">Cerrar Sesión</a></li>
+                    <li><a href="index.php">cerrar sesión</a></li>
                 </ul>
             </nav>
 
@@ -43,7 +43,7 @@
        
         var total = 0, subtotal = 0;
         var productos_html = "";
-        console.log(productos);
+        
         for(var i = 0; i < productos.length; i++){
             subtotal += productos[i].precio;            
             var proc = `

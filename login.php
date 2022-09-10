@@ -7,10 +7,10 @@
 
     //Usuarios
     $user_admin = "admin";
-    $pass_admin = "admin";
+    $pass_admin = "asd";
 
-    $user_client = "client";
-    $pass_client = "client";
+    $user_client = "cliente";
+    $pass_client = "123";
 
     $role = "";
     $success = false;
